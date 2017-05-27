@@ -3,10 +3,26 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
-
-
-
-Router.route('/intro', function () {
-  console.log('hello');
+Router.route('/', function () {
   this.render('Intro');
+});
+
+Router.route('/disclaimer', function () {
+  this.render('/Disclaimer');
+});
+
+Router.route('/activation', function () {
+  this.render('/Activation');
+});
+
+Router.route('/menu', function () {
+  this.render('/Menu');
+});
+
+Router.route('/medication', function () {
+  this.render('/Medication');
+});
+
+Router.route('/diagnosis', function () {
+  this.render('/Diagnosis');
 });
