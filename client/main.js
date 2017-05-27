@@ -8,21 +8,21 @@ Router.route('/', function () {
 });
 
 Router.route('/disclaimer', function () {
-  this.render('/Disclaimer');
+  this.render('Disclaimer');
 });
 
 Router.route('/activation', function () {
-  this.render('/Activation');
+  this.render('Activation');
 });
 
 Router.route('/menu', function () {
-  this.render('/Menu');
+  this.render('Menu');
 });
 
 Router.route('/medication', function () {
-  this.render('/Medication');
+  this.render('Medication');
 });
 
 Router.route('/diagnosis', function () {
-  this.render('/Diagnosis');
+  this.render('Diagnosis');
 });
