@@ -16,7 +16,5 @@ Template.Activation.events({
     if (activation_code == "pineapple") {
       Router.go('menu');
     }
-    //validation code goes here
-
   }
 });
