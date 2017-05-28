@@ -13,7 +13,7 @@ if (Meteor.isCordova) {
   });
 } else {
   Template.Intro.events({
-    'click #lets_get_started_button': function(event, template){
+    'click, touchstart #lets_get_started_button': function(event, template){
       Router.go('disclaimer');
     }
   });
