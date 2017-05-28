@@ -1,10 +1,20 @@
 <template name="Activation">
-  <H1>Enter Your Details</H1>
-  <form class="activation_form">
-    <input type="text" class="form-control" name="first_name" placeholder="first name" />
-    <input type="text" class="form-control" name="second_name" placeholder="second name" />
-    <input type="text" class="form-control" name="nhs_number" placeholder="NHS Number" />
-    <input type="text" class="form-control" name="activation_code" placeholder="enter activation code..." />
-    <button type='submit' id='activation_button'>Submit</button>
+  <div class=header-details> <p><h3> ENTER YOUR</h3><br><h1>DETAILS</h1></p></div>
+  <div class=form-bg>
+
+  <div class=form-details>
+   <form>
+    Name<br>
+    <input type="text" name="name"><br><br><br>
+    NHS Number<br>
+    <input type="text" name="nhs_number"><br><br><br>
+    Activation Number<br>
+    <input type="text" name="activation_code">
   </form>
+
+  </div>
+
+   </div>
+
+    <div class='ready_to_go_button'><p>READY TO GO</p></div>
 </template>

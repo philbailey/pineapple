@@ -7,11 +7,10 @@ Template.Activation.events({
   'submit .activation_form': function(event, template){
     event.preventDefault();
     var activation_code = event.target.activation_code.value;
-    var first_name = event.target.first_name.value;
-    var second_name = event.target.second_name.value;
+    var name = event.target.name.value;
     var nhs_number = event.target.nhs_number.value;
 
-    console.log(first_name + ' ' + ' ' + second_name + ' ' + nhs_number + ' ' + activation_code);
+    console.log(name + ' ' + ' ' + nhs_number + ' ' + activation_code);
 
     if (activation_code == "pineapple") {
       Router.go('menu');
