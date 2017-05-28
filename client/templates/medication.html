@@ -1,3 +1,18 @@
 <template name="Medication">
   <h1>Medication</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Medicine</th>
+        <th>Notification</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each medicines}}
+      <tr>
+        <td>{{medication_name}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
 </template>

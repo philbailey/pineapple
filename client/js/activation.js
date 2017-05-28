@@ -11,8 +11,12 @@ Template.Activation.events({
     var second_name = event.target.second_name.value;
     var nhs_number = event.target.nhs_number.value;
 
-    console.log(first_name + ' ' + ' ' + second_name + ' ' + nhs_number + ' ' +activation_code);
+    console.log(first_name + ' ' + ' ' + second_name + ' ' + nhs_number + ' ' + activation_code);
+
+    if (activation_code == "pineapple") {
+      Router.go('menu');
+    }
     //validation code goes here
-    Router.go('menu');
+
   }
 });

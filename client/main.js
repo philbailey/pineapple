@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
+import '../databases.js';
 
 import './main.html';
 
@@ -27,6 +28,5 @@ Router.route('/diagnosis', function () {
   this.render('Diagnosis');
 });
 
-User = new Mongo.Collection('user');
-
-Diagnosis = new Mongo.Collection('diagnosis');
+Meteor.subscribe('medications');
+console.log(Medications.find().fetch());
