@@ -85,7 +85,7 @@ h2 {
   vertical-align: middle;
 }
 
-.top-left {
+#top-left {
   display: table;
   position: absolute;
   top:0%;
@@ -95,7 +95,7 @@ h2 {
   background: #f7a724;
 }
 
-.top-right {
+#top-right {
   display: table;
   position: absolute;
   top:0%;
@@ -105,7 +105,7 @@ h2 {
   background: #f37e16;
 }
 
-.mid-left {
+#mid-left {
   display: table;
   position: absolute;
   top:33.4%;
@@ -115,7 +115,7 @@ h2 {
   background: #429f46;
 }
 
-.mid-right {
+#mid-right {
   display: table;
   position: absolute;
   top:33.4%;
@@ -125,7 +125,7 @@ h2 {
   background: #66b96a;
 }
 
-.low-left {
+#low-left {
   display: table;
   position: absolute;
   top:66.7%;
@@ -135,7 +135,7 @@ h2 {
   background: #f37e16;
 }
 
-.low-right {
+#low-right {
   display: table;
   position: absolute;
   top:66.7%;
