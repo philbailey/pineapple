@@ -3,15 +3,20 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import '../templates/menu.html';
 
-Template.Activation.events({
-//  'click .top-left': function(event, template){
-//	console.log("top-left");
+//Template.Activation.events({
+//  'click #menu_button': function(event, template) {
 //    event.preventDefault();
-//    Router.go("Diagnosis");
-//  },
-  'click #menu_form': function(event, template){
-	console.log("menu_form");
+//	console.log("menu_button");
+////    Router.go("diagnosis");
+//  }
+//});
+
+Template.Activation.events({
+  'submit .menu_form': function(event, template){
     event.preventDefault();
-    Router.go("diagnosis");
+
+    console.log('foo');
+    //validation code goes here
+    Router.go('diagnosis');
   }
 });
