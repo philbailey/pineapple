@@ -12,7 +12,7 @@ import '../templates/menu.html';
 //});
 
 Template.Activation.events({
-  'submit .menu_form': function(event, template){
+  'click .menu_form': function(event, template){
     event.preventDefault();
 
     console.log('foo');
