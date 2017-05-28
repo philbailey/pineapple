@@ -26,3 +26,7 @@ Router.route('/medication', function () {
 Router.route('/diagnosis', function () {
   this.render('Diagnosis');
 });
+
+User = new Mongo.Collection('user');
+
+Diagnosis = new Mongo.Collection('diagnosis');
