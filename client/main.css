@@ -1,1 +1,96 @@
 /* CSS declarations go here */
+body {
+  background: #83A293;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; 
+  font-size: 1.3em; 
+  color: #ffffff;
+  text-align: center; 
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; 
+  font-size: .85em; 
+  color: #ffffff;
+  text-align: center; 
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.top-left {
+  display: table;
+  position: absolute;
+  top:0%;
+  left: 0%;
+  width: 50%;
+  height: 33.3%;
+  background: #f7a724;
+}
+
+.top-right {
+  display: table;
+  position: absolute;
+  top:0%;
+  left: 50%;
+  width: 50%;
+  height: 33.3%;
+  background: #f37e16;
+}
+
+.mid-left {
+  display: table;
+  position: absolute;
+  top:33.4%;
+  left: 0%;
+  width: 50%;
+  height: 33.3%;
+  background: #429f46;
+}
+
+.mid-right {
+  display: table;
+  position: absolute;
+  top:33.4%;
+  left: 50%;
+  width: 50%;
+  height: 33.3%;
+  background: #66b96a;
+}
+
+.low-left {
+  display: table;
+  position: absolute;
+  top:66.7%;
+  left: 0%;
+  width: 50%;
+  height: 33.3%;
+  background: #f37e16;
+}
+
+.low-right {
+  display: table;
+  position: absolute;
+  top:66.7%;
+  left: 50%;
+  width: 50%;
+  height: 33.3%;
+  background: #e55000;
+}
+
+.notification {
+  display: table;
+  position: absolute;
+  top:10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  background: #323232;
+  border-radius: 50%; 
+  color: #ffffff; 
+}
