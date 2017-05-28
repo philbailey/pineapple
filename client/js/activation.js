@@ -4,7 +4,8 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import '../templates/activation.html';
 
 Template.Activation.events({
-  'submit .activation_form': function(event, template){
+  'submit #activation_form': function(event, template){
+
     event.preventDefault();
     var activation_code = event.target.activation_code.value;
     var name = event.target.name.value;
