@@ -1,6 +1,8 @@
 /* CSS declarations go here */
+
 body {
   background: #f7a724;
+  color: #ffffff;
 }
 
 p {
@@ -40,7 +42,7 @@ p {
   width: 100%;
   height: 14.8%;
   background: #429f46;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Patua One', cursive;
   font-weight: 600;
   font-size: 1.9em;
   color: #ffffff;
@@ -65,7 +67,7 @@ p {
   left: 0%;
   width: 100%;
   height: 28%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Patua One', cursive;
   font-weight: 600;
   font-size: 1.9em;
   color: #e55000;
@@ -79,7 +81,7 @@ p {
   left: 0%;
   width: 100%;
   height: 28%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Patua One', cursive;
   font-weight: 600;
   font-size: 1.9em;
   background: #429f46;
@@ -93,7 +95,7 @@ p {
   top:35%;
   left: 10%;
   width: 80%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Patua One', cursive;
   font-weight: 600;
   font-size: .9em;
 }
@@ -110,21 +112,14 @@ input[type=text] {
   bottom:0%;
   left: 0%;
   width: 100%;
-  height: 14.8%;
-  background: #f7a724;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1.9em;
-  color: #e55000;
-  text-align: center;
-  display: table;
-  background: #429f46;
-  font-family: 'Open Sans', sans-serif;
+  height: 10%;
+  font-family: 'Patua One', cursive;
   font-weight: 600;
   font-size: 1.9em;
   color: #ffffff;
   text-align: center;
   display: table;
+  background-color: #429f46;
   text-vertical-align: middle;
 }
 
@@ -133,7 +128,7 @@ input[type=text] {
   top: 20%;
   left: 23%;
   width: 54%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Patua One', cursive;
   font-weight: 400;
   font-size: .9em;
   color: #353535;
@@ -147,7 +142,7 @@ p {
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Patua One', cursive;
   font-weight: 600;
   font-size: 1.8em;
   text-align: center;
@@ -156,7 +151,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Patua One', cursive;
   font-weight: 600;
   font-size: .85em;
   color: #ffffff;
@@ -166,7 +161,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Patua One', cursive;
   font-weight: 600;
   font-size: 1em;
   text-align: center;
@@ -253,7 +248,7 @@ h3 {
   width: 100%;
   height: 14.8%;
   background: #f7a724;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Patua One', cursive;
   font-weight: 600;
   font-size: 1.9em;
   color: #e55000;
@@ -269,7 +264,7 @@ h3 {
   width: 100%;
   height: 10%;
   background: #429f46;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Patua One', cursive;
   font-weight: 600;
   font-size: 2.8em;
   color: #f7a724;
@@ -282,4 +277,22 @@ h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.lets_get_started_button {
+  position: absolute;
+  bottom:0%;
+  left: 0%;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  display: table;
+  background: #429f46;
+  font-family: 'Patua One', cursive;
+  font-weight: 600;
+  font-size: 1.9em;
+  color: #ffffff;
+  text-align: center;
+  display: table;
+  text-vertical-align: middle;
 }

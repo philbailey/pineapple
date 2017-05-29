@@ -1,3 +1,86 @@
 <template name="Diagnosis">
-  <h1>Diagnosis</h1>
+  <H1>Diagnosis</H1>
+  {{#if thereAreNoDiagnoses}}
+    <H2>You have not entered any diagnoses.</H2>
+  {{else}}
+    <table>
+      <thead>
+        <tr>
+          <th>Diagnosis</th>
+          <th>Date</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each diagnoses}}
+        <tr>
+          <td>{{diagnosis}}</td>
+          <td>{{diagnosis_date}}</td>
+          <td class="new_record"><i class="fa fa-plus" aria-hidden="true"></i></td>
+          <td class="edit_record"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+          <td class="delete_record"><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{/if}}
+  <H1>Associated Problems</H1>
+  {{#if thereAreNoProblems}}
+    <H2>You have not entered any problems.</H2>
+  {{else}}
+    <table>
+      <thead>
+        <tr>
+          <th>Problem</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each problems}}
+        <tr>
+          <td>{{problem}}</td>
+          <td>{{problem_start_date}}</td>
+          <td>{{problem_end_date}}</td>
+          <td class="new_record"><i class="fa fa-plus" aria-hidden="true"></i></td>
+          <td class="edit_record"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+          <td class="delete_record"><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{/if}}
+  <H1>Procedures</H1>
+  {{#if thereAreNoProcedures}}
+    <H2>You have not entered any procedures.</H2>
+  {{else}}
+    <table>
+      <thead>
+        <tr>
+          <th>Procedure</th>
+          <th>Date</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each procedures}}
+        <tr>
+          <td>{{procedure}}</td>
+          <td>{{procedure_date}}</td>
+          <td class="new_record"><i class="fa fa-plus" aria-hidden="true"></i></td>
+          <td class="edit_record"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+          <td class="delete_record"><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{/if}}
+  <button id='return_button'>DONE</button>
 </template>
