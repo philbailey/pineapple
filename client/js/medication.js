@@ -37,8 +37,10 @@ Template.Medication.events({
   },
   'click .new_record': function(event, template){
     console.log('create new record');
+    Router.go('medication_add');
   },
   'click #edit_record': function(event, template){
-    console.log('edit this record: ' + this._id);
+    console.log('edit this record: ');
+    Router.go('/medication_item/'+this._id);
   }
 })

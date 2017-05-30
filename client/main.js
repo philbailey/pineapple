@@ -24,6 +24,19 @@ Router.route('/medication', function () {
   this.render('Medication');
 });
 
+Router.route('/medication_item/:_id',{
+    template: 'Medication_Item',
+    data: function() {
+      return Medications.findOne({_id: this.params._id});
+    }
+    //  return Medications.findOne(this.params._id);
+
+});
+
+Router.route('/medication_add', function(){
+  this.render('Medication_Add');
+});
+
 Router.route('/diagnosis', function () {
   this.render('Diagnosis');
 });
@@ -58,3 +71,5 @@ console.log(Medications.find().fetch());
 //  mid orange darker: ed6c00
 //  dark orange: e55000
 //  dark text: 353535
+
+//https://www.iconexperience.com/g_collection/icons/?icon=pineapple

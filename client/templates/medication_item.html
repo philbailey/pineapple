@@ -1,0 +1,12 @@
+<template name='Medication_Item'>
+  <H1>Medication Edit Page</H1>
+  <form>
+    <input type='text' value={{medication_name}} name='medication_name' placeholder="Medicine">
+    <input type='text' value={{medication_frequency}} name='medication_frequency' placeholder="Frequency">
+    <input type='date' value={{medication_date}} name='medication_date' placeholder="date">
+    <input type='submit' value='Update Medicine' name='update_medicine'>
+  </form>
+  <button class='information_button'><i class="fa fa-info-circle" aria-hidden="true"></i></button>
+  <button class='medication_reminder_button'><i class="fa fa-bell" aria-hidden="true"></i></button>
+  <button class='return_button'>Return</button>
+</template>
