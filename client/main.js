@@ -41,6 +41,39 @@ Router.route('/diagnosis', function () {
   this.render('Diagnosis');
 });
 
+Router.route('/diagnosis_add', function () {
+  this.render('Diagnosis_Add');
+});
+
+Router.route('/diagnosis_item/:_id',{
+    template: 'Diagnosis_Item',
+    data: function() {
+      return Diagnoses.findOne({_id: this.params._id});
+    }
+});
+
+Router.route('/problem_add', function () {
+  this.render('Problem_Add');
+});
+
+Router.route('/problem_item/:_id',{
+    template: 'Problem_Item',
+    data: function() {
+      return Problems.findOne({_id: this.params._id});
+    }
+});
+
+Router.route('/procedure_add', function () {
+  this.render('Procedure_Add');
+});
+
+Router.route('/procedure_item/:_id',{
+    template: 'Procedure_Item',
+    data: function() {
+      return Procedures.findOne({_id: this.params._id});
+    }
+});
+
 Router.route('/results', function () {
   this.render('Results');
 });

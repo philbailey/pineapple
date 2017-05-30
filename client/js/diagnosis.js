@@ -5,6 +5,8 @@ import '../templates/diagnosis.html';
 
 Template.Diagnosis.onCreated(function bodyOnCreated() {
   Meteor.subscribe('diagnoses');
+  Meteor.subscribe('problems');
+  Meteor.subscribe('procedures');
 });
 
 Template.Diagnosis.helpers({
@@ -19,7 +21,7 @@ Template.Diagnosis.helpers({
     }
   },
   'problems': function(){
-    return Diagnoses.find().fetch();
+    return Problems.find().fetch();
   },
   'thereAreNoProblems': function(){
     if (Problems.find().count() < 1) {
@@ -29,7 +31,7 @@ Template.Diagnosis.helpers({
     }
   },
   'procedures': function(){
-    return Diagnoses.find().fetch();
+    return Procedures.find().fetch();
   },
   'thereAreNoProcedures': function(){
     if (Problems.find().count() < 1) {
@@ -43,5 +45,32 @@ Template.Diagnosis.helpers({
 Template.Diagnosis.events({
   'click #return_button':function(event, template){
     Router.go('menu');
+  },
+  'click #add_diagnosis_button': function(event, template){
+    Router.go('/diagnosis_add');
+  },
+  'click #edit_diagnosis_button': function(event, template){
+    Router.go('/diagnosis_item/'+this._id);
+  },
+  'click #delete_diagnosis_button': function(event, template){
+    Diagnoses.remove({_id: this._id});
+  },
+  'click #add_problem_button': function(event, template){
+    Router.go('/problem_add');
+  },
+  'click #edit_problem_button': function(event, template){
+    Router.go('/problem_item/'+this._id);
+  },
+  'click #delete_problem_button': function(event, template){
+    Problems.remove({_id: this._id});
+  },
+  'click #add_procedure_button': function(event, template){
+    Router.go('/procedure_add');
+  },
+  'click #edit_procedure_button': function(event, template){
+    Router.go('/procedure_item/'+this._id);
+  },
+  'click #delete_procedure_button': function(event, template){
+    Procedures.remove({_id: this._id});
   }
 });

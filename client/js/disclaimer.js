@@ -8,4 +8,4 @@ Template.Disclaimer.events({
   'click .accept_disclaimer_button': function(event, template){
     Router.go('activation');
   }
-})
+});

@@ -18,14 +18,14 @@
         <tr>
           <td>{{diagnosis}}</td>
           <td>{{diagnosis_date}}</td>
-          <td class="new_record"><i class="fa fa-plus" aria-hidden="true"></i></td>
-          <td class="edit_record"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-          <td class="delete_record"><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+          <td class="edit_record" id='edit_diagnosis_button'><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+          <td class="delete_record" id='delete_diagnosis_button'><i class="fa fa-trash-o" aria-hidden="true"></i></td>
         </tr>
         {{/each}}
       </tbody>
     </table>
   {{/if}}
+  <div class="new_record" id='add_diagnosis_button'><i class="fa fa-plus" aria-hidden="true"></i></div>
   <H1>Associated Problems</H1>
   {{#if thereAreNoProblems}}
     <H2>You have not entered any problems.</H2>
@@ -47,14 +47,14 @@
           <td>{{problem}}</td>
           <td>{{problem_start_date}}</td>
           <td>{{problem_end_date}}</td>
-          <td class="new_record"><i class="fa fa-plus" aria-hidden="true"></i></td>
-          <td class="edit_record"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-          <td class="delete_record"><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+          <td class="edit_record" id='edit_problem_button'><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+          <td class="delete_record" id='delete_problem_button'><i class="fa fa-trash-o" aria-hidden="true"></i></td>
         </tr>
         {{/each}}
       </tbody>
     </table>
   {{/if}}
+  <div class="new_record" id='add_problem_button'><i class="fa fa-plus" aria-hidden="true"></i></div>
   <H1>Procedures</H1>
   {{#if thereAreNoProcedures}}
     <H2>You have not entered any procedures.</H2>
@@ -74,13 +74,14 @@
         <tr>
           <td>{{procedure}}</td>
           <td>{{procedure_date}}</td>
-          <td class="new_record"><i class="fa fa-plus" aria-hidden="true"></i></td>
-          <td class="edit_record"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-          <td class="delete_record"><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+          <td class="edit_record" id='edit_procedure_button'><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+          <td class="delete_record" id='delete_procedure_button'><i class="fa fa-trash-o" aria-hidden="true"></i></td>
         </tr>
         {{/each}}
       </tbody>
     </table>
   {{/if}}
+  <div class="new_record" id='add_procedure_button'><i class="fa fa-plus" aria-hidden="true"></i></div>
+  <BR><BR><BR><BR><BR>
   <button id='return_button'>DONE</button>
 </template>
