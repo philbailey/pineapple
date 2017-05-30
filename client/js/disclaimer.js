@@ -5,7 +5,7 @@ import '../templates/disclaimer.html';
 
 
 Template.Disclaimer.events({
-  'click #accept_disclaimer_button': function(event, template){
+  'click .accept_disclaimer_button': function(event, template){
     Router.go('activation');
   }
-})
+});

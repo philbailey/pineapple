@@ -1,18 +1,32 @@
 <template name="Medication">
   <h1>Medication</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Medicine</th>
-        <th>Notification</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each medicines}}
-      <tr>
-        <td>{{medication_name}}</td>
-      </tr>
-      {{/each}}
-    </tbody>
-  </table>
+  {{#if thereAreNoMedicines}}
+    <H2>You have not added any medicines.</H2>
+  {{else}}
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each medicines}}
+          <tr>
+            <td>{{medication_name}}</td>
+            <td>{{medication_frequency}}</td>
+            <td class='medication_notification'><i class="fa fa-bell" aria-hidden="true"></i></td>
+            <td class='information_icon'><i class="fa fa-info-circle" aria-hidden="true"></i></td>
+            <td id="edit_record"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+            <td id="delete_record"><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{/if}}
+  <button id='return_button'>Back To Menu</button><br><br><div class="new_record"><i class="fa fa-plus" aria-hidden="true"></i></div>
 </template>
